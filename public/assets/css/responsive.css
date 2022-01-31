@@ -1,0 +1,117 @@
+@media (min-width: 1024px) {
+  .cursor {
+    font-size: 1.7361vw;
+    display: block;
+  }
+  .text-image-content {
+    padding: 0 2rem;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1.5fr 1fr;
+        grid-template-columns: 1.5fr 1fr;
+  }
+  .text-image-content.reversed {
+    -ms-grid-columns: 1fr 1.5fr;
+        grid-template-columns: 1fr 1.5fr;
+    padding: 0 2rem 0 6rem;
+  }
+  .text-image-content.reversed .text {
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  .text-image-content.reversed .text .title.dual-tone {
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+    margin-left: -15rem;
+  }
+  .text-image-content.reversed .text .paragraph {
+    text-align: right;
+  }
+  .text-image-content .text {
+    padding: 8rem 4rem;
+  }
+  .text-image-content .text .title {
+    font-size: 72px;
+  }
+  .text-image-content .text .title.dual-tone {
+    margin-right: -15rem;
+    letter-spacing: 1rem;
+    -ms-flex-item-align: end;
+        align-self: flex-end;
+  }
+  .footer {
+    padding: 4rem 10rem 1rem;
+  }
+  .footer .top {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .footer .top .left {
+    margin-bottom: 0;
+  }
+  .footer .top .left nav ul li .footer-link {
+    -webkit-transform: translate3d(2rem, 0, 0);
+            transform: translate3d(2rem, 0, 0);
+  }
+  .menu {
+    padding: 0 15rem;
+  }
+  .menu nav {
+    font-size: 72px;
+  }
+}
+
+@media (min-width: 768px) {
+  .hero .title {
+    font-size: 72px;
+    letter-spacing: 1rem;
+    color: var(--text);
+  }
+  .hero .pill {
+    height: 80%;
+  }
+  .sub-hero .title {
+    font-size: 72px;
+  }
+  .sub-hero .title h1 {
+    letter-spacing: 1rem;
+  }
+  .text-content .paragraph img {
+    width: 80%;
+  }
+}
+
+@media (min-width: 620px) {
+  .navbar {
+    padding: 2rem 6rem;
+  }
+  .bottom-bar {
+    padding: 2rem 6rem;
+  }
+  .text-content {
+    padding: 0 6rem;
+  }
+  .text-content .heading {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .text-content .heading .title {
+    width: 40%;
+  }
+  .text-content .heading .subtitle {
+    width: 40%;
+    text-align: right;
+  }
+}
+/*# sourceMappingURL=responsive.css.map */

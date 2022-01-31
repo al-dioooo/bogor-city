@@ -1,0 +1,137 @@
+@media (min-width: 1024px) {
+    .cursor {
+        font-size: 1.7361vw;
+        display: block;
+    }
+
+    .text-image-content {
+        padding: 0 2rem;
+        display: grid;
+        grid-template-columns: 1.5fr 1fr;
+
+        &.reversed {
+            grid-template-columns: 1fr 1.5fr;
+            padding: 0 2rem 0 6rem;
+
+            .text {
+                align-items: flex-end;
+                order: 2;
+
+                .title {
+                    &.dual-tone {
+                        align-self: flex-start;
+                        margin-left: -15rem;
+                    }
+                }
+
+                .paragraph {
+                    text-align: right;
+                }
+            }
+        }
+
+        .text {
+            padding: 8rem 4rem;
+
+            .title {
+                font-size: 72px;
+
+                &.dual-tone {
+                    margin-right: -15rem;
+                    letter-spacing: 1rem;
+                    align-self: flex-end;
+                }
+            }
+        }
+    }
+
+    .footer {
+        padding: 4rem 10rem 1rem;
+
+        .top {
+            flex-direction: row;
+
+            .left {
+                margin-bottom: 0;
+
+                nav {
+                    ul {
+                        li {
+                            .footer-link {
+                                transform: translate3d(2rem, 0, 0);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .menu {
+        padding: 0 15rem;
+
+        nav {
+            font-size: 72px;
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .hero {
+        .title {
+            font-size: 72px;
+            letter-spacing: 1rem;
+            color: var(--text);
+        }
+
+        .pill {
+            height: 80%;
+        }
+    }
+
+    .sub-hero {
+        .title {
+            font-size: 72px;
+
+            h1 {
+                letter-spacing: 1rem;
+            }
+        }
+    }
+
+    .text-content {
+        .paragraph {
+            img {
+                width: 80%;
+            }
+        }
+    }
+}
+
+@media (min-width: 620px) {
+    .navbar {
+        padding: 2rem 6rem;
+    }
+
+    .bottom-bar {
+        padding: 2rem 6rem;
+    }
+
+    .text-content {
+        padding: 0 6rem;
+
+        .heading {
+            flex-direction: row;
+            justify-content: space-between;
+
+            .title {
+                width: 40%;
+            }
+
+            .subtitle {
+                width: 40%;
+                text-align: right;
+            }
+        }
+    }
+}
